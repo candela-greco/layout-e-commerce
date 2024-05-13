@@ -1,0 +1,110 @@
+/* GENERAL */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Cambia la definición de las columnas */
+    grid-template-rows: auto;
+}
+
+#menu-lateral, .product-grid, footer {
+    font-family: "Reddit Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    grid-column: 1 / -1;
+    display: flex;
+    background: #000;;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    justify-content: start;
+    align-items: center;
+}
+.encabezado h1 {
+    margin: auto ;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.encabezado img {
+    border-radius: 50%;
+    width: 50px;
+    margin: 30px 50px 0 35px;
+
+}
+
+
+/* MENU LATERAL */
+
+#menu-lateral {
+    display: inline-flex;
+    flex-direction: column;
+    grid-column: 1 ;
+    background-color: #000;
+    color: #fff;
+    height: 80vh;
+    padding-top: 90px;
+}
+#menu-lateral ul {
+    list-style: none;
+}
+#menu-lateral ul li:hover {
+    background:rgba(133, 123, 134, 0.5);
+}
+
+/* PRODUCTOS */
+
+main {
+    grid-column: 2 / -1;
+    background-color: rgba(133, 123, 134, 0.5);
+    padding: 0;
+    margin: 0;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    margin: 0;
+    padding-top: 100px;
+}
+.producto {
+    text-align: center;
+}
+.producto p {
+    font-weight: 300;
+}
+.producto img {
+    width: 150px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 0;
+}
+.producto button {
+    border-radius: 0;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 #7bffd3;
+}
+.producto button:hover {
+    box-shadow: 0 10px 10px 0 #7bffd3;
+}
+
+
+/* PIE DE PAGINA */
+
+footer {
+    grid-column: 1 / -1;
+    background-color: #000;
+    color: #fff;
+    height: 42px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
